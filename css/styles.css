@@ -1,0 +1,18 @@
+:root {
+  --primary-heading-color: #212121;
+  --secondary-heading-color: #ffffff;
+  --primary-link-color: #212121;
+  --accent-color: #2196f3;
+  --main-text-color: #757575;
+  --first-background-color: #ffffff;
+  --second-background-color: #2f303a;
+  --third-background-color: #f5f4fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color: var(--first-background-color);
+}
