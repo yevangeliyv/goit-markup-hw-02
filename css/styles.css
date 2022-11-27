@@ -7,6 +7,11 @@
   --first-background-color: #ffffff;
   --second-background-color: #2f303a;
   --third-background-color: #f5f4fa;
+  --header-logo-color: #000000;
+  --footer-logo-color: #ffffff;
+  --first-btn-text-color: #212121;
+  --second-btn-text-color: #ffffff;
+  --first-btn-hover-text-color: #ffffff;
 }
 
 body {
@@ -54,7 +59,7 @@ body {
 /* ==========HEADER========== */
 
 .header-logo {
-  color: #000000;
+  color: var(--header-logo-color);
 }
 
 .logo-text {
@@ -80,7 +85,8 @@ body {
 .header-link:hover,
 .header-link:focus,
 .contact-link:hover,
-.contact-link:focus {
+.contact-link:focus,
+.active {
   color: var(--accent-color);
 }
 
@@ -97,25 +103,28 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--secondary-heading-color);
 }
 
 .hero-btn {
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--second-btn-text-color);
   background-color: var(--accent-color);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
 }
 
 /* ==========ABOUT========== */
 
 .about-subtitle {
-  font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
@@ -132,6 +141,10 @@ body {
   background-color: #f5f4fa;
 }
 
+.team-items {
+  background-color: var(--first-background-color);
+}
+
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -141,10 +154,11 @@ body {
 }
 
 .team-name {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+  color: var(--primary-heading-color);
 }
 
 .team-position {
@@ -160,13 +174,14 @@ body {
 }
 
 .footer-logo {
-  color: #ffffff;
+  color: var(--footer-logo-color);
 }
 
 .footer-link {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
 }
 
 .address {
@@ -176,17 +191,18 @@ body {
 /* ==========WORKS========== */
 
 .works-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
   cursor: pointer;
-  color: #212121;
+  color: var(--first-btn-text-color);
 }
 
 .works-btn:hover,
 .works-btn:focus {
-  color: #ffffff;
+  color: var(--first-btn-hover-text-color);
   background-color: var(--accent-color);
 }
 
