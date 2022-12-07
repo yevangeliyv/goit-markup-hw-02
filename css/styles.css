@@ -22,7 +22,27 @@ body {
   background-color: var(--first-background-color);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
 /* UNIVERSAL CLASES */
+
+.container {
+  width: 1200px;
+  padding: 0px, 15px;
+  margin: 0, auto;
+}
 
 .list {
   list-style: none;
@@ -107,6 +127,10 @@ body {
 }
 
 .hero-btn {
+  display: block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  text-align: center;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
